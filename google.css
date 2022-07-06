@@ -1,0 +1,32 @@
+body {
+    background-color: white;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.search {
+    width: 100%;
+    position: relative;
+    display: flex;
+}
+
+.searchTerm {
+    width: 100%;
+    border: 2px solid black;
+    border-right: none;
+    padding: 10px;
+    height: 20px;
+    border-radius: 25px 25px;
+    outline: none;
+}
+
+.searchTerm:focus {
+    color: black;
+}
+
+.wrap {
+    width: 30%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
