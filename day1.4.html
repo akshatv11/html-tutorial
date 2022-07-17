@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forms</title>
+    
+</head>
+
+<body style="background-color: pink;">
+    <center>
+        <form action="backend.php"><br><br><br><br><br><br>
+            <label for="fname">Firstname:</label>
+            <input type="text" id="fname" name="fname"><br><br>
+            <label for="lname">Lastname:</label>
+            <input type="text" id="lname" name="lname"><br><br>
+            <br>
+            <label for="skill">Choose a skill:</label>
+            <select id="skill" name="carlist" form="skill">
+                <option value="VueJS">VueJS</option>
+                <option value="AngularJS">AngularJS</option>
+                <option value="ReactJS">ReactJS
+            </select>
+            <br><br><br>
+            <label for="city">Choose multiple city:</label>
+            <select name="city" id="city" multiple>
+                <option value="delhi">delhi</option>
+                <option value="banglore">banglore</option>
+                <option value="kolkata">kolkata</option>
+                <option value="chennai">chennai</option>
+            </select>
+            <br><br><br>
+            <input type="submit">
+            <input type="reset">
+        </form>
+        <p>
+            For selecting multiple option hold ctrl and select different choices.....
+
+        </p>
+        
+
+
+
+    </center>
+</body>
+
+</html>
