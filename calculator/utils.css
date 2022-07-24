@@ -1,0 +1,15 @@
+.text_center{
+    text-align: center;
+
+}
+.bg-pink{
+    background: white;
+}
+
+.auto {
+    margin: auto;
+
+}
+.width_ {
+    max-width: 30vw;
+}
