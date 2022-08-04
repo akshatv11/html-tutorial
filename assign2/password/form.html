@@ -1,0 +1,86 @@
+<!-- AKSHAT VERMA
+REGISTRATION CODE = IIPRSS1826
+PYTHON DJANGO BATCH -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/sakura.css/css/sakura.css" type="text/css">
+    <script src="form.js"></script>
+    <title>password</title>
+</head>
+
+<body style="background-color: rgb(140, 227, 227);">
+    <div>
+        <center>
+            <h1 style="color: rgb(4, 39, 4);">validate your password here</h1>
+
+        </center>
+    </div><br>
+
+    <div>
+        <form onsubmit="">
+            FIRST_NAME:- <input type="text" placeholder="enter first_name"><br>
+            LAST_NAME:- <input type="text" placeholder="enter last_name"><br>
+            USERNAME:- <input type="text" placeholder="username"><br>
+            EMAIL:- <input type="email" placeholder="enter only gmail id"><br>
+            PASSWORD:- <input type="password" placeholder="'enter password"><br>
+            CONFIRM_PASSWORD:- <input type="password" placeholder="re-enter password"><br>
+            <input type="submit">
+            <input type="reset">
+        </form>
+    </div>
+
+    <script>
+        function validate() {
+    var fname = document.getElementById('f_name');
+        var lname = document.getElementById('l_name');
+        var usrname = document.getElementById('user_name');
+        var mail = document.getElementById('email');
+        var ps1 = document.getElementById('pass1');
+        var ps2 = document.getElementById('pass2');
+
+        if (fname == "") {
+            document.getElementById('blankmsg').innerHTML = 'enter name';
+            return false;
+        }
+        if (lname == "") {
+            document.getElementById('blankmsg').innerHTML = 'enter last name';
+            return false;
+        }
+        if (usrname == "") {
+            document.getElementById('blankmsg').innerHTML = 'enter username';
+            return false;
+        }
+        if (ps1 == "") {
+            document.getElementById("message1").innerHTML = "**Fill the password please!";
+            return false;
+        }
+
+        if (ps2 == "") {
+            document.getElementById("message2").innerHTML = "**Enter the password please!";
+            return false;
+        }
+        if (pw1.length < 8) {
+            document.getElementById("message1").innerHTML = "password should be only 8 charecters";
+            return false;
+        }
+
+        if (ps1 != ps2) {
+            document.getElementById("message2").innerHTML = "**Passwords are not same";
+            return false;
+        } else {
+            alert("Your password created successfully");
+            document.write("JavaScript form has been submitted successfully");
+        }
+}
+    </script>
+</body>
+
+</html>
